@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>SUNNY SOAP</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+      background: url('123.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 60px 20px;
+      backdrop-filter: brightness(1.1) blur(3px);
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #1ebe57;
+    }
+
+    #myBox {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      max-width: 250px;
+    }
+
+    .gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+.icon-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-links a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s ease;
+    }
+
+    .icon-links a img:hover {
+      transform: scale(1.2);
+    }
+    .icon-item {
+    text-align: center;
+    }
+
+  .icon-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="#info">Mydło</a>
+  <a href="#gallery">Galeria</a>
+  <a href="#woreczek">Woreczek na mydło</a>
+  <a href="#Kto za tym stoi?">Kto za tym stoi?</a>
+  <a href="#contact">Kontakt</a>
+</header>
+
+<section id="info">
+  <h2>SUNNY SOAP — Naturalne Mydła Ręcznie Robione</h2>
+  <p><strong>Cena: 7.50 zł / szt</strong></p>
+  <button onclick="toggleContent()" class="btn">Pokaż opis</button>
+  <div id="myBox">
+Naturalne Mydło Ręcznie Robione z delikatnym peelingiem kawowym, lawendowym, kokosowym.
+
+🌿 Szukasz mydła, które nie tylko oczyszcza, ale także pielęgnuje Twoją skórę?
+
+🟡 Ręcznie robione z pasją i miłością, z naturalnych składników.
+
+💠Dlaczego warto wybrać nasze mydło?
+
+💎 1. Delikatny peeling: Zawartość drobno zmielonej kawy sprawia, że nasze mydło delikatnie usuwa martwy naskórek, pozostawiając skórę miękką i gładką. Peeling jest bardzo drobny, co sprawia, że nie podrażnia skóry, a jednocześnie skutecznie oczyszcza pory i odświeża wygląd.
+💎 2. Naturalny zapach kawy: Zapach kawy to nie tylko przyjemność dla zmysłów, ale także naturalny sposób na relaks i pobudzenie. Aromat naszego mydła jest intensywny, ale subtelny – idealny na początek dnia lub wieczorny relaks.
+💎 3. Składniki bezpieczne dla skóry: Używamy jedynie naturalnych olejów i składników najwyższej jakości, dzięki czemu nasze mydło jest łagodne nawet dla skóry wrażliwej. Brak sztucznych barwników, konserwantów i chemicznych dodatków sprawia, że jest to produkt odpowiedni dla wszystkich, którzy cenią naturalną pielęgnację.
+💎 4. Ekologiczny wybór: Nasze mydło to produkt ręcznie robiony, który powstaje w małych partiach. Dbałość o środowisko naturalne oraz unikanie zbędnych odpadów to dla nas priorytet.
+
+🧼 Waga: 95 g
+💰 Cena: 7.49 zł
+📦 Darmowa dostawa od 99 zł
+🏠 Odbiór osobisty — Leszno
+🚚 Dostawa — cała Polska
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="6.jpg" alt="Mydło 1">
+      <div class="caption">Kawowe mydło peelingujące</div>
+    </div>
+    <div class="gallery-item">
+      <img src="13.jpg" alt="Mydło 2">
+      <div class="caption">Lawendowe mydło relaksujące</div>
+    </div>
+    <div class="gallery-item">
+      <img src="999.jpg" alt="Mydło 3">
+      <div class="caption">Pachnące Kokos & Wanilia</div>
+    </div>
+  </div>
+</section>
+
+<section id="woreczek">
+  <h2>SUNNY SOAP — Woreczek na mydło</h2>
+  <p><strong>Cena: 2.99 zł / szt</strong></p>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="8.jpg" alt="worek 1">
+      <div class="caption">
+        Woreczek na mydło z naturalnego sizalu, 💫<br>
+        eksfoliująca pianka ze sznurkiem, 🤞🏻<br>
+        bezpieczny plastikowy wieszak do suszenia mydła pod prysznicem 🛀🏻🫶🏻
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="9.jpg" alt="worek 2">
+      <div class="caption">
+        🤍Dodaj wyjątkowy akcent do swojego codziennego rytuału pielęgnacji! 🥰<br>
+        🤍Ten woreczek z sizalu sprawi, że Twoje mydło stworzy przyjemnie masującą piankę, 
+        delikatnie złuszczając skórę i pozostawiając ją miękką oraz gładką.🌹
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="10.jpg" alt="worek 3">
+      <div class="caption">
+        🤍Dzięki praktycznemu wieszakowi łatwo zawiesisz mydełko do wyschnięcia, 
+        przedłużając jego trwałość i świeżość.🌸🌸🌸
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Kto za tym stoi?">
+  <h2>O mnie</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px;">
+    
+    <div style="flex: 1; min-width: 280px; max-width: 400px;">
+      <img src="777.jpg" alt="Anastazja - SUNNY SOAP" style="width: 100%; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    </div>
+
+    <div style="flex: 2; min-width: 300px; max-width: 500px;">
+      <p style="font-size: 17px; line-height: 1.7;">
+        Cześć! Nazywam się Anastazja i za marką <strong>SUNNY SOAP</strong> stoi moja własna historia – pachnąca, pełna pasji i wspomnień. 🌿<br><br>
+
+        Moja przygoda z mydłem zaczęła się jeszcze w czasach college'u, kiedy uczęszczałam na <strong>kółko mydlarskie</strong>. Z pozoru to był tylko dodatkowy zajęć… ale dla mnie stał się początkiem czegoś wyjątkowego.<br><br>
+
+        Studiowałam na kierunku <strong>Technologia tłuszczów i substytutów tłuszczowych</strong>, a między 2017 a 2020 rokiem — jeszcze jako studentka — zaczęłam nie tylko <strong>tworzyć własne mydła</strong>, ale też <strong>sprzedawać je z radością i dumą</strong>.<br><br>
+
+        To, że dziś robię to, co kocham, zawdzięczam przede wszystkim <strong>pani Lesi</strong>, cudownej nauczycielce z college'u, która zaszczepiła we mnie pasję do naturalnych kosmetyków i pracy ręcznej. 💛<br><br>
+
+        Dziś — kilka lat później — znów <strong>wracam do swojej pasji</strong>. Chcę dzielić się nią z Wami wszystkimi, którzy <strong>kochacie naturalność, prostotę i zapach prawdziwego mydła</strong>.<br><br>
+
+        Każda kostka SUNNY SOAP to <strong>małe dzieło serca i natury</strong> — robione ręcznie, z miłością i szacunkiem do Twojej skóry.<br><br>
+
+        🌼 Jeśli cenisz to, co autentyczne — zapraszam Cię do mojego małego pachnącego świata!<br><br>
+
+        Pozdrawiam serdecznie,  
+        <strong>Anastazja</strong><br>
+        <em>@sunny_soap_pl</em>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Kontakt</h2>
+  <p>Skontaktuj się z nami:</p>
+
+  <div class="icon-links">
+    <div class="icon-item">
+      <a href="https://wa.me/48511207101" target="_blank">
+        <img src="w234.png" alt="WhatsApp">
+      </a>
+      <div class="icon-caption">WhatsApp</div>
+    </div>
+    <div class="icon-item">
+      <a href="https://www.instagram.com/sunny_soap_pl" target="_blank">
+        <img src="i234.jpg" alt="Instagram">
+      </a>
+      <div class="icon-caption">Instagram</div>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleContent() {
+  const box = document.getElementById("myBox");
+  box.style.display = (box.style.display === "none" || box.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
